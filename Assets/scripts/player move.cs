@@ -6,53 +6,53 @@ using UnityEngine.InputSystem;
 public class playermove : MonoBehaviour
 {
     public float speed;
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D rigidBody;
     private Vector2 movementInput;
     private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
-       rigidbody = GetComponent<Rigidbody2D>();
+        rigidBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-       if (Input.GetKeyDown(KeyCode.W))
-            {
+       if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            anim.enabled = true;
             anim.SetTrigger("back anim");
+            
         }
-        if (Input.GetKeyUp(KeyCode.W))
-            {
-            anim.SetTrigger("stopbacc");
-        }
+ 
 
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
+            anim.enabled = true;
             anim.SetTrigger("forward anim");
+            
         }
-        if (Input.GetKeyUp(KeyCode.S))
-        {
-            anim.SetTrigger("stopfront");
-        }
+    
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
+            anim.enabled = true;
             anim.SetTrigger("leftanim");
+            
         }
-        if (Input.GetKeyUp(KeyCode.A))
-        {
-            anim.SetTrigger("stopleft");
-        }
+    
 
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
+            anim.enabled = true;
             anim.SetTrigger("rightanim");
-        }
-        if (Input.GetKeyUp(KeyCode.D))
+        }   
+            
+
+        if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.A))
         {
-            anim.SetTrigger("stopright");
+            anim.enabled= false;
         }
     }
     private void FixedUpdate()
@@ -61,7 +61,7 @@ public class playermove : MonoBehaviour
     }
     private void LateUpdate()
     {
-        rigidbody.velocity = movementInput * speed ;
+        rigidBody.velocity = movementInput * speed ;
     }
     private void OnMove(InputValue inputValue)
     {
