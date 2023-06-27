@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - coins
   layers:
   - Default
   - TransparentFX
@@ -58,4 +59,16 @@ TagManager:
     locked: 0
   - name: woll
     uniqueID: 2776098085
+    locked: 0
+  - name: trap 1
+    uniqueID: 3407599491
+    locked: 0
+  - name: trap2
+    uniqueID: 4076631159
+    locked: 0
+  - name: trap3
+    uniqueID: 4158093035
+    locked: 0
+  - name: trap 4
+    uniqueID: 1135030315
     locked: 0
