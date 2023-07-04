@@ -10,6 +10,7 @@ public class playermove : MonoBehaviour
     private Vector2 movementInput;
     private Animator anim;
     public int cash;
+    public int hp;
     // Start is called before the first frame update
     void Start()
     {
@@ -78,6 +79,16 @@ public class playermove : MonoBehaviour
         {
             Destroy(collision.gameObject);
             cash++;
+        }
+        if (collision.gameObject.CompareTag("speed"))
+        {
+          Transform col = collision.transform;
+            col.transform.position = new Vector2(999, 999);
+        }
+        if (collision.gameObject.CompareTag("helt"))
+        {
+            Destroy(collision.gameObject);
+          
         }
     }
 

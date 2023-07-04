@@ -5,7 +5,10 @@ using UnityEngine;
 public class traps : MonoBehaviour
     
 {
-   public Animator anim; 
+   public Animator anim;
+    public int trapDmg;
+    public playermove Player;
+    public bool playeron;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +22,7 @@ public class traps : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        playeron = true;
         if (collision.gameObject.CompareTag("Player"))
             {
             anim.SetBool("active", true);
@@ -26,9 +30,18 @@ public class traps : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
+        playeron = false;
         if (collision.gameObject.CompareTag("Player"))
         {
             anim.SetBool("active", false);
         }
     }
+    public void PlayerDamage()
+    { 
+     if (playeron) 
+        {
+            Player.hp -= trapDmg;
+        }
+    }
 }
+    
