@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem; 
 
@@ -11,6 +12,7 @@ public class playermove : MonoBehaviour
     private Animator anim;
     public int cash;
     public int hp;
+    public TextMeshProUGUI hpbarTextMeshPro, cashTextMeshPro;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,42 +23,44 @@ public class playermove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       //if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
-       // {
-       //     anim.enabled = true;
-       //     anim.SetTrigger("back anim");
-            
-       // }
- 
+        hpbarTextMeshPro.text = hp.ToString();
+        cashTextMeshPro.text = cash.ToString();
+        //if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        // {
+        //     anim.enabled = true;
+        //     anim.SetTrigger("back anim");
 
-       // if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
-       // {
-       //     anim.enabled = true;
-       //     anim.SetTrigger("forward anim");
-            
-       // }
-    
+        // }
 
-       // if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
-       // {
-       //     anim.enabled = true;
-       //     anim.SetTrigger("leftanim");
-            
-       // }
-    
 
-       // if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
-       // {
-       //     anim.enabled = true;
-       //     anim.SetTrigger("rightanim");
-       // }   
-            
+        // if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+        // {
+        //     anim.enabled = true;
+        //     anim.SetTrigger("forward anim");
 
-       // if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.A))
-       // {
-       //     anim.enabled= false;
-       // }
-       anim.SetFloat("horizontal", movementInput.x);
+        // }
+
+
+        // if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+        // {
+        //     anim.enabled = true;
+        //     anim.SetTrigger("leftanim");
+
+        // }
+
+
+        // if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+        // {
+        //     anim.enabled = true;
+        //     anim.SetTrigger("rightanim");
+        // }   
+
+
+        // if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.A))
+        // {
+        //     anim.enabled= false;
+        // }
+        anim.SetFloat("horizontal", movementInput.x);
        anim.SetFloat("vertical", movementInput.y);
         anim.SetFloat("sped",movementInput.sqrMagnitude);
     }

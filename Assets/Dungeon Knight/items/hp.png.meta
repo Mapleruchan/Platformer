@@ -1,22 +1,7 @@
 fileFormatVersion: 2
-guid: 7bd805dcd8ce6774ea4949686f21b524
+guid: 9943842f3e2811a43bd63c0ef0fbbb8c
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 21300000
-    second: chest_0
-  - first:
-      213: 21300002
-    second: chest_1
-  - first:
-      213: 21300004
-    second: chest_2
-  - first:
-      213: 21300006
-    second: chest_3
-  - first:
-      213: 21300008
-    second: chest_4
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -45,12 +30,12 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: -3
-  maxTextureSize: 1024
+  textureFormat: 1
+  maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
-    aniso: 16
+    filterMode: 1
+    aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
@@ -78,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,10 +81,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,10 +93,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chest_0
+      name: hp_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 9
-        width: 16
-        height: 14
+        x: 37
+        y: 999
+        width: 629
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25eee25b0eee9634489ff39cb78380c6
-      internalID: 21300000
+      spriteID: 693ffc5feb095de4b9d6804ca4f270e0
+      internalID: 1797074741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chest_1
+      name: hp_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 9
-        width: 16
-        height: 15
+        x: 37
+        y: 814
+        width: 629
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 777b9ef71a8a4fb4e8a141bf5805fa80
-      internalID: 21300002
+      spriteID: b29e617ae6734d14dbc32bcadd7ab549
+      internalID: -1886889747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chest_2
+      name: hp_2
       rect:
         serializedVersion: 2
-        x: 72
-        y: 9
-        width: 16
-        height: 15
+        x: 37
+        y: 629
+        width: 629
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43c9a5a0d6752bd46a50cbf886b77cc0
-      internalID: 21300004
+      spriteID: c82f3c8e1010b0748bd9e058f2a43013
+      internalID: -1505859102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chest_3
+      name: hp_3
       rect:
         serializedVersion: 2
-        x: 104
-        y: 9
-        width: 16
-        height: 15
+        x: 37
+        y: 444
+        width: 629
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f4a650537ad1f549b70e89b65286cb6
-      internalID: 21300006
+      spriteID: 6fe9c9bf9443b1a4cb7deaa425a23dd3
+      internalID: -504324007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chest_4
+      name: hp_4
       rect:
         serializedVersion: 2
-        x: 136
-        y: 9
-        width: 16
-        height: 15
+        x: 37
+        y: 259
+        width: 629
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,8 +205,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b751d18599730954d833382c2c3b634a
-      internalID: 21300008
+      spriteID: 59fef4d45e4fce1469acd022f851203d
+      internalID: -517763899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hp_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 74
+        width: 629
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5e2faa1ba485c40810611ae09ba7db
+      internalID: -1499559833
       vertices: []
       indices: 
       edges: []
@@ -229,7 +235,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 87b975a9e86dfd045aaf7138a33d4720
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -237,11 +243,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      chest_0: 21300000
-      chest_3: 21300006
-      chest_1: 21300002
-      chest_4: 21300008
-      chest_2: 21300004
+      hp_2: -1505859102
+      hp_3: -504324007
+      hp_0: 1797074741
+      hp_5: -1499559833
+      hp_1: -1886889747
+      hp_4: -517763899
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
